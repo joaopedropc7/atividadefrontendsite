@@ -31,11 +31,12 @@ header nav .list ul{
 header nav .list ul li a{
     color: var(--bluetext);
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 header nav .list ul li a:hover{
     color: var(--h1color);
+    transition: 0.3s;
 }
 
 header nav .midheader h2{
@@ -84,6 +85,7 @@ header nav .logoesphera figure img{
 .section-home .content .purchase {
     padding: 10px 28px;
     background-color: var(--buttoncolorfort);
+    border: 3px solid var(--white);
     text-decoration: none;
     font-weight: 300;
     color: var(--white);
@@ -321,7 +323,7 @@ header nav .logoesphera figure img{
     color: var(--buttoncolorfort);
     transition: 0.3s;
     padding: 28px 58px;
-    border: 2px solid var(--buttoncolorfort);
+    border: 1px solid var(--buttoncolorfort);
 }
 
 .footer{
@@ -378,4 +380,10 @@ header nav .logoesphera figure img{
     text-decoration: none;
     color: var(--fth3color);
     font-weight: 400;
+}
+
+.footer .footer-second .list ul li a:hover{
+    color: var(--bluetext);
+    transition: 0.5s;
+    font-size: 17px;
 }
