@@ -10,6 +10,8 @@ body{
     --h1color: #091133;
     --white: #fff;
     --buttoncolorfort: #111B47;
+    --bgcolor: #E7ECFF;
+    --fth3color: #939EA4;
 }
 
 header nav{
@@ -30,6 +32,10 @@ header nav .list ul li a{
     color: var(--bluetext);
     text-decoration: none;
     font-weight: 300;
+}
+
+header nav .list ul li a:hover{
+    color: var(--h1color);
 }
 
 header nav .midheader h2{
@@ -264,7 +270,7 @@ header nav .logoesphera figure img{
 .time .content{
     margin-top: 50px;
     width: 1000px;
-    margin-right: 40px;
+    margin: 0px 40px;
 }
 
 .time .content h2{
@@ -316,4 +322,60 @@ header nav .logoesphera figure img{
     transition: 0.3s;
     padding: 28px 58px;
     border: 2px solid var(--buttoncolorfort);
+}
+
+.footer{
+    background-color: var(--bgcolor);
+}
+
+.footer .footer-first{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    margin: 0px 160px;
+}
+
+.footer .footer-first .coprygth h3{
+    font-weight: 400;
+    color: var(--fth3color);
+    font-size: 1rem;
+}
+
+.footer .footer-first .mid h2{
+    font-weight: 500;
+    color: var(--h1color);
+    font-size: 22px;
+}
+
+.footer .footer-first .button a{
+    padding: 8px 28px;
+    background-color: var(--buttoncolorfort);
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.footer .footer-first .button a:hover{
+    background-color: var(--h1color);
+    transition: 0.3s;
+}
+
+.footer .footer-second{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    margin: 0px 160px;
+}
+
+.footer .footer-second .list ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.footer .footer-second .list ul li a{
+    text-decoration: none;
+    color: var(--fth3color);
+    font-weight: 400;
 }
