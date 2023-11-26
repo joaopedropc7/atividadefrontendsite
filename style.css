@@ -14,6 +14,26 @@ body{
     --fth3color: #939EA4;
 }
 
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: black;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--buttoncolor);
+}
+
 header nav{
     margin: 0 160px;
     padding-top: 25px;
@@ -48,6 +68,12 @@ header nav .logoesphera figure img{
     height: 70px;
 }
 
+.home{
+    display: flex;
+    margin-left: 160px;
+    margin-top: 250px;
+}
+
 .section-home {
     display: flex;
     position: relative;
@@ -62,9 +88,7 @@ header nav .logoesphera figure img{
 }
 
 .section-home .content{
-    margin-top: 250px;
     width: 700px;
-    margin-left: 160px;
 }
 
 .section-home .content h1{
@@ -83,7 +107,7 @@ header nav .logoesphera figure img{
 }
 
 .section-home .content .purchase {
-    padding: 10px 28px;
+    padding: 8px 36px;
     background-color: var(--buttoncolorfort);
     border: 3px solid var(--white);
     text-decoration: none;
@@ -387,3 +411,490 @@ header nav .logoesphera figure img{
     transition: 0.5s;
     font-size: 17px;
 }
+
+@media only screen and (max-width: 1290px){
+    header nav ul li{
+        display: none;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    .home .section-home{
+        justify-content: center;
+        max-width: 100%;
+        order: 1;
+    }
+    .home .image-body{
+        display: none;
+        order: 2;
+    }
+
+    .home .section-home .content{
+        margin: 0 auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .light-fast{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+        padding: 0px;
+    }
+    
+    .light-fast .content{
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    .light-fast .image{
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .light-fast .image figure img{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .time .content h2{
+       font-size: 44px;
+       margin: 0px;
+       padding: 10px;
+    }
+
+    .time .button a{
+        padding: 15px 30px;
+    }
+
+    .footer{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 1025px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    .home .section-home{
+        justify-content: center;
+        max-width: 100%;
+        order: 1;
+    }
+    .home .image-body{
+        display: none;
+        order: 2;
+    }
+
+    .home .section-home .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .home .section-home .content h1{
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .home .section-home .content p{
+        font-size: 16px;
+    }
+
+    .home .section-home .content .leia{
+        margin: 0px;
+    }
+
+    .light-fast{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+        padding: 0px;
+    }
+    
+    .light-fast .content{
+        margin-top: 40px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 380px;
+        padding: 0px;
+    }
+
+    .light-fast .content h2{
+        font-size: 24px;
+    }
+
+    .light-fast .content .image-light{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .light-fast .image{
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .light-fast .image figure img{
+        width: 380px;
+        height: 380px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .powerful{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .powerful .content{
+        width: 380px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .powerful .content h2{
+        font-size: 24px;
+    }
+
+    .powerful .image{
+        justify-content: center;
+        margin-left: 35px;
+        margin-bottom: 35px;
+    }
+
+    .powerful .image figure img{
+        width: 380px;
+        height: 400px;
+    }
+
+    .desenvolvedor{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .desenvolvedor .content{
+        width: 380px;
+    }
+
+    .desenvolvedor .image{
+        align-items: center;
+    }
+
+    .desenvolvedor .image figure img{
+        width: 360px;
+        height: 360px;
+    }
+
+    .time .image{
+        display: none;
+    }
+
+    .time .content{
+        text-align: center;
+    }
+
+    .time .content h2{
+       font-size: 44px;
+       margin: 0px;
+       padding: 10px;
+    }
+
+    .time .content .button a{
+        padding: 15px 30px;
+    }
+
+    .footer{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer .footer-first{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+        gap: 14px;
+    }
+
+    .footer .footer-first .button a{
+        padding: 8px 12px;
+    }
+
+    .footer .footer-second .image{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 860) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    .home .section-home{
+        justify-content: center;
+        max-width: 100%;
+        order: 1;
+    }
+    .home .image-body{
+        display: none;
+        order: 2;
+    }
+
+    .home .section-home .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .home .section-home .content h1{
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .home .section-home .content p{
+        font-size: 16px;
+    }
+
+    .home .section-home .content .leia{
+        margin: 0px;
+    }
+
+    .light-fast{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+        padding: 0px;
+    }
+    
+    .light-fast .content{
+        margin-top: 40px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 350px;
+        padding: 0px;
+    }
+
+    .light-fast .content h2{
+        font-size: 24px;
+    }
+
+    .light-fast .content .image-light{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .light-fast .image{
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .light-fast .image figure img{
+        width: 350px;
+        height: 380px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .powerful{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .powerful .content{
+        width: 350px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .powerful .content h2{
+        font-size: 24px;
+    }
+
+    .powerful .image{
+        justify-content: center;
+        margin-left: 35px;
+        margin-bottom: 35px;
+    }
+
+    .powerful .image figure img{
+        width: 350px;
+        height: 400px;
+    }
+
+    .desenvolvedor{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .desenvolvedor .content{
+        width: 380px;
+    }
+
+    .desenvolvedor .image{
+        align-items: center;
+    }
+
+    .desenvolvedor .image figure img{
+        width: 350px;
+        height: 360px;
+    }
+
+    .time .image{
+        display: none;
+    }
+
+    .time .content{
+        text-align: center;
+    }
+
+    .time .content h2{
+       font-size: 44px;
+       margin: 0px;
+       padding: 10px;
+    }
+
+    .time .content .button a{
+        padding: 15px 30px;
+    }
+
+    .footer{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer .footer-first{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+        gap: 14px;
+    }
+
+    .footer .footer-first .button a{
+        padding: 8px 12px;
+    }
+
+    .footer .footer-second .image{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 500) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    .home .section-home{
+        justify-content: center;
+        max-width: 100%;
+        order: 1;
+    }
+    .home .image-body{
+        display: none;
+        order: 2;
+    }
+
+    .home .section-home .content{
+        margin: 0 auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .light-fast{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+        padding: 0px;
+    }
+    
+    .light-fast .content{
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    .light-fast .image{
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .light-fast .image figure img{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .time .content h2{
+       font-size: 44px;
+       margin: 0px;
+       padding: 10px;
+    }
+
+    .time .button a{
+        padding: 15px 30px;
+    }
+
+    .footer{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+  }
